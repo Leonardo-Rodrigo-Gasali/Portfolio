@@ -1,0 +1,18 @@
+/* Reset CSS */
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif; /* Font family principal */
+}
+
+ol,
+ul {
+  list-style: none;
+}

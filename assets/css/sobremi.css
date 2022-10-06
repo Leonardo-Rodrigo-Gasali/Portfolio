@@ -1,0 +1,105 @@
+@import "style.css"; 
+
+
+/* Sobre mi */
+.sobremi{
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 0;
+    background: var(--bg-color-secundario);
+  }
+  
+  
+  .sobremi .titulo__secundario{
+    color: var(--color-black-bright);
+    font-size: 55px;
+    font-weight: 700;
+  }
+  
+  .sobremi img{
+    height: auto;
+    width: 400px;
+    border-radius: 100%;
+/*  border: 5px solid var(--color-secundario); */
+    box-shadow: 10px 10px 5px #ccc;
+  }
+  
+  .sobremi__text{
+    width: 550px;
+  }
+  
+  .main__div{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .sobremi__text h1{
+     color: #111;
+     font-size: 45px;
+     font-weight: 700;
+     margin-bottom: 20px;
+  }
+  
+  .sobremi__text h5{
+    color: #111;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .main__div span{
+    color: var(--color-navbar);
+  }
+  
+  .sobremi__text p{
+    color: var(--color-black-bright);
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .main__div .btn{
+    display: inline-block;
+      padding: 12px 45px;
+      border: 1px solid var(--color-navbar);
+      border-radius: 20px;
+      background-color: var(--color-navbar);
+      color: #fff;
+      margin-top: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: transform 80ms ease-in;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .main__div .btn:hover {
+    opacity: 0.7;
+    background-color: white;
+    color: #111;
+  }
+  
+  
+  /* Responsive */
+
+  @media only screen and (max-width: 1200px) {
+    .sobremi__text{
+      margin-left: 15px;
+     }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .sobremi__text{
+      margin-left: 15px;
+     }
+  }
+  
+  
+   
+  

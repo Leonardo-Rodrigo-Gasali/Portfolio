@@ -1,0 +1,48 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+/* Variables */
+:root {
+  --bg-color-primario: #011936;
+  --bg-color-secundario: #fdfeff;
+  --color-navbar: #ee4b2b;
+  --color-primario: #fffefd;
+  --color-secundario: #1b1212;
+  --color-black-bright: #222024;
+  --color-black: #111111;
+  --btn-color-red: #ee4b2b;
+  --btn-color-white: #ffffff;
+  --color-underline: #2e86ab;
+}
+
+/* Sobre Mi  sections titulos*/
+
+.titulo__section {
+  /* Titulo secundario */
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.titulo__secundario {
+  font-size: 55px;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.titulo__secundario::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-navbar);
+  width: 50%;
+  height: 5px;
+  z-index: 1;
+}
+
+
+

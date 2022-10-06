@@ -1,0 +1,91 @@
+@import "style.css"; 
+
+
+/* Skills */
+
+.skills{
+    background: var(--bg-color-primario);
+    margin: 10px 0;
+    padding: 20px 0;
+  }
+  
+  .skills .titulo__secundario{
+    color: var(--color-primario);
+    font-size: 55px;
+    font-weight: 700;
+  }
+  
+  .grid{
+    display: grid;
+  }
+  
+  .skills__card__container {
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+  }
+  
+  
+  .skills__card {
+    display: grid;
+    position: relative;
+    justify-content: center;
+    background-color: var(--color-primario);
+    box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
+    padding: 20px 20px 15px 15px;
+    margin: 15px 5px;
+    border-radius: .75rem;
+  }
+  
+  .skills__card img{
+    width: 200px;
+    height: 150px;
+    max-width: 100%;
+  }
+  
+  .skills__img {
+    justify-self: center;
+    transition: .3s;
+  }
+  
+  
+  .skills__titulo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--color-underline);
+  }
+  
+  .skills__card:hover .skills__img {
+    transform: translateY(-10px);
+  }
+  
+  
+  /* Responsive */
+
+  @media screen and (max-width: 768px) {
+  
+    .skills__card__container {
+      grid-template-columns: repeat(3, 150px);
+      justify-content: center;
+    }
+    .skills__card img{
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .skills__card__container {
+      grid-template-columns: repeat(2, 160px);
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+  
+    .skills__card__container {
+      grid-template-columns: repeat(1, 180px);
+      justify-content: center;
+    }
+  }
